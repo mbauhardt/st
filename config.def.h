@@ -170,7 +170,7 @@ static MouseShortcut mshortcuts[] = {
 #define TERMMOD (ControlMask|ShiftMask)
 
 static char *openurlcmd[] = { "/bin/sh", "-c",
-    "sed 's/.*│//g' | tr -d '\n' | grep -aEo '(((http|https)://|www\\.)[a-zA-Z0-9.]*[:]?[a-zA-Z0-9./&%?#=_-]*)'| uniq | sed 's/^www./http:\\/\\/www\\./g' | dmenu -i -p 'Go:' -l 10 | xargs -r $BROWSER",
+    "xurls | uniq | dmenu -i -p 'Go:' -l 10 | xargs -r $BROWSER",
     "externalpipe", NULL };
 
 static Shortcut shortcuts[] = {
