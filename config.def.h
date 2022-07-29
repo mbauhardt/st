@@ -476,5 +476,5 @@ static uint selmasks[] = {
  */
 static char ascii_printable[] =
 	" !\"#$%&'()*+,-./0123456789:;<=>?"
-	"@abcdefghijklmnopqrstuvwxyz[\\]^_"
+	"@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_"
 	"`abcdefghijklmnopqrstuvwxyz{|}~";
