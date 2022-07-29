@@ -100,33 +100,40 @@ float alpha = 0.8;
 static const char *colorname[] = {
   /* 8 normal colors */
 //[0] = "#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-  [0] = "#32302f", /* hard contrast: #1d2021 / soft contrast: #32302f */
-  [1] = "#ea6962", /* red     */
-  [2] = "#a9b665", /* green   */
-  [3] = "#d8a657", /* yellow  */
-  [4] = "#7daea3", /* blue    */
-  [5] = "#d3869b", /* magenta */
-  [6] = "#89b482", /* cyan    */
-  [7] = "#d4be98", /* white   */
+  [0] = "#3b4252", /* hard contrast: #1d2021 / soft contrast: #32302f */
+  [1] = "#bf616a", /* red     */
+  [2] = "#a3be8c", /* green   */
+  [3] = "#ebcb8b", /* yellow  */
+  [4] = "#81a1c1", /* blue    */
+  [5] = "#b48ead", /* magenta */
+  [6] = "#88c0d0", /* cyan    */
+  [7] = "#e5e9f0", /* white   */
 
   /* 8 bright colors */
-  [8]  = "#928374", /* black   */
-  [9]  = "#ef938e", /* red     */
-  [10] = "#bbc585", /* green   */
-  [11] = "#e1bb7e", /* yellow  */
-  [12] = "#9dc2ba", /* blue    */
-  [13] = "#e1acbb", /* magenta */
-  [14] = "#a7c7a2", /* cyan    */
-  [15] = "#e2d3ba", /* white   */
+  [8]  = "#4c566a", /* black   */
+  [9]  = "#bf616a", /* red     */
+  [10] = "#a3be8c", /* green   */
+  [11] = "#ebcb8b", /* yellow  */
+  [12] = "#81a1c1", /* blue    */
+  [13] = "#b48ead", /* magenta */
+  [14] = "#8fbcbb", /* cyan    */
+  [15] = "#eceff4", /* white   */
+
+  [255] = 0,
+ 
+  "#d8dee9",
+  "#2e3440",
+  "#d8dee9", /* default foreground colour */
+  "#2e3440", /* default background colour */
 };
 
 /*
  * Default colors (colorname index)
  * foreground, background, cursor
  */
-unsigned int defaultfg = 15;
-unsigned int defaultbg = 0;
-unsigned int defaultcs = 15;
+unsigned int defaultfg = 258;
+unsigned int defaultbg = 259;
+unsigned int defaultcs = 256;
 static unsigned int defaultrcs = 257;
 
 /*
@@ -469,5 +476,5 @@ static uint selmasks[] = {
  */
 static char ascii_printable[] =
 	" !\"#$%&'()*+,-./0123456789:;<=>?"
-	"@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_"
+	"@abcdefghijklmnopqrstuvwxyz[\\]^_"
 	"`abcdefghijklmnopqrstuvwxyz{|}~";
